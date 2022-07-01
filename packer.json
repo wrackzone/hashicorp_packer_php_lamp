@@ -1,0 +1,32 @@
+{
+    "builders": [
+        {
+        "metadata": { "enable-oslogin": "false" },
+        "type": "googlecompute",
+        "project_id": "barry-mullan",
+        "ssh_username" : "ubuntu",
+        "source_image_family": "ubuntu-2204-lts",
+        "zone": "us-central1-a",
+        "enable_secure_boot": true,
+        "omit_external_ip": true,
+        "use_internal_ip": true
+        }
+    ],
+    "provisioners" : [
+      {
+          "type": "file",
+          "source": "sql/mysql_create_user.sql",
+          "destination": "/home/ubuntu/"
+      },
+      {
+          "type": "file",
+          "source": "pages/index.php",
+          "destination": "/home/ubuntu/"
+      },
+      {
+          "type" : "shell",
+          "script" : "scripts/lamp-ubuntu.sh"
+      }
+    ]
+  }
+  
