@@ -1,0 +1,5 @@
+steps:
+- name: 'gcr.io/playground-352300/packer'
+  args:
+  - build
+  - packer.json
