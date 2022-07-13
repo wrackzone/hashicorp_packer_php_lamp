@@ -1,6 +1,9 @@
 {
     "builders" : [
         {
+        "metadata": {
+            "enable-oslogin": "FALSE"
+            },
         "type": "googlecompute",
         "project_id": "barry-mullan",
         "ssh_username" : "ubuntu",
