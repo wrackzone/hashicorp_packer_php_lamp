@@ -1,5 +1,5 @@
 {
-    "builders": [
+    "builders" : [
         {
         "metadata": { "enable-oslogin": "false" },
         "type": "googlecompute",
@@ -7,9 +7,7 @@
         "ssh_username" : "ubuntu",
         "source_image_family": "ubuntu-2204-lts",
         "zone": "us-central1-a",
-        "enable_secure_boot": true,
-        "omit_external_ip": true,
-        "use_internal_ip": true
+        "enable_secure_boot": true
         }
     ],
     "provisioners" : [
@@ -28,5 +26,7 @@
           "script" : "scripts/lamp-ubuntu.sh"
       }
     ]
-  }
+}
+
+  
   
