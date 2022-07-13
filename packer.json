@@ -6,7 +6,6 @@
             },
         "type": "googlecompute",
         "project_id": "barry-mullan",
-        "ssh_username" : "ubuntu",
         "source_image_family": "ubuntu-2204-lts",
         "zone": "us-central1-a"
         }

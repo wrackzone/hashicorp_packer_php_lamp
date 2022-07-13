@@ -3,6 +3,6 @@ steps:
   args:
   - build
   - packer.json
-options:
-  pool:
-    name: 'projects/barry-mullan/locations/us-central1/workerPools/my-private-pool'
+# options:
+#   pool:
+#     name: 'projects/barry-mullan/locations/us-central1/workerPools/my-private-pool'
